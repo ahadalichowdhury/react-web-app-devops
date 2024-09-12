@@ -1,0 +1,22 @@
+# This is a sample deployment manifest file for a simple web application.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-ubuntu-web-app
+  labels:
+    app: react-ubuntu-web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-ubuntu-web-app
+  template:
+    metadata:
+      labels:
+        app: react-ubuntu-web-app
+    spec:
+      containers:
+        - name: react-ubuntu-web-app
+          image: ahadalichowdhury/react-ubuntu-web-app:v1
+          ports:
+            - containerPort: 3000 # Ensure regular space here
