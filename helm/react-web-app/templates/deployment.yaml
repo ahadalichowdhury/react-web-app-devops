@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: react-ubuntu-web-app
-          image: ahadalichowdhury/react-ubuntu-web-app:{{ .Values.image.tag }}
+          image: ahadalichowdhury/react-web-app:{{ .Values.image.tag }}
           ports:
             - containerPort: 3000 # Ensure regular space here

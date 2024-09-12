@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: react-ubuntu-web-app
-          image: ahadalichowdhury/react-ubuntu-web-app:v1
+          image: ahadalichowdhury/react-web-app:v1
           ports:
             - containerPort: 3000 # Ensure regular space here
